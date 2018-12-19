@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 * {
   box-sizing: border-box;
+  margin: auto;
+  text-align: center;
 }
 
 html {
-  font-family: Helvetica Neue;
+  font-family: Open Sans;
   background-color: #4d4d4d;
 }
 
@@ -12,7 +16,8 @@ body {
 }
 
 .topBar {
-  padding: 0px 6px 0px 5px;
+  background-color: #4d4d4d;
+  padding: 2px 6px 2px 5px;
   box-shadow: 0px 0px 3px black;
   display: flex;
   justify-content: space-around;
@@ -25,15 +30,16 @@ body {
   display: inline;
 }
 
-.topBar .navigation {
+nav .navigation {
   padding: 0;
 }
 
-.topBar .navigation li {
+nav .navigation li {
+  display: inline-flex;
   margin-right: 3px;
 }
 
-.topBar .navigation li a {
+nav .navigation li a {
   color: #a6d514;
   text-decoration: none;
   transition: background-color linear 0.1s,color linear 0.1s;
@@ -41,21 +47,23 @@ body {
   padding: 5px 30px 5px 30px;
 }
 
-.topBar .navigation .activated {
+nav .navigation .activated {
+  box-shadow: 0 0 2px black;
   color: #4d4d4d;
   background-color: #a6d514;
 }
 
-.topBar .navigation li a:hover {
+nav .navigation li a:hover {
   color: #4d4d4d;
   background-color: #a6d514;
   z-index: 1;
 }
 
 .topBar .social a {
+  box-shadow: 0 0 2px black;
   opacity: 0.6;
   margin-left: 20px;
-  border-radius: 3px;
+  border-radius: 100px;
   display: inline-block;
   width: 30px;
   height: 30px;
