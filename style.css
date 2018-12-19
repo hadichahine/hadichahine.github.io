@@ -86,3 +86,45 @@ nav .navigation li a:hover {
 .topBar .social .twitter {
   background-image: url("twitter_flat.png");
 }
+
+.footer {
+  font-size:85%;
+  background-color: #4d4d4d;
+  position: fixed;
+  bottom: 0;
+  padding: 10px 0 10px 0;
+  box-shadow: 0 0 2px black;
+  width: 100%;
+  text-align: center;
+}
+
+.footer img {
+  margin-right: 5px;
+  width: 10px;
+}
+
+.footer * {
+  color: white;
+}
+
+.footer .location {
+  margin-right: 50px;
+}
+
+.footer .email {
+  text-decoration: none;
+}
+
+.footer .email a {
+  margin-left: 50px;
+  text-decoration: none;
+  transition: color linear 0.1s;
+}
+
+.footer .email a:hover{
+  color: #a6d514;
+}
+
+.footer .copyright {
+  margin-left: 50px;
+}
