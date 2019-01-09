@@ -59,13 +59,17 @@
   .topBar .social a {
     box-shadow: 0 0 2px black;
     opacity: 0.6;
-    margin-left: 20px;
     border-radius: 100px;
     display: inline-block;
     width: 30px;
     height: 30px;
     background-size: 100% 100%;
     transition: opacity linear 0.1s; 
+  }
+
+  .topBar .social .middleIcon {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .topBar .social a:hover {
