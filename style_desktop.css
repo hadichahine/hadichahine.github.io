@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+  }
+  
+  html {
+    background-color: #4d4d4d;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .topBar {
+    background-color: #4d4d4d;
+    padding: 2px 6px 2px 5px;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .topBar *{
+    vertical-align: middle;
+    display: inline;
+  }
+  
+  nav .navigation {
+    padding: 0;
+  }
+  
+  nav .navigation li {
+    display: inline-flex;
+    margin-right: 3px;
+  }
+  
+  nav .navigation li a {
+    color: #a6d514;
+    text-decoration: none;
+    transition: background-color linear 0.1s,color linear 0.1s;
+    border-radius: 3px;
+    padding: 5px 30px 5px 30px;
+  }
+  
+  nav .navigation .activated {
+    box-shadow: 0 0 2px black;
+    color: #4d4d4d;
+    background-color: #a6d514;
+  }
+  
+  nav .navigation li a:hover {
+    color: #4d4d4d;
+    background-color: #a6d514;
+    z-index: 1;
+  }
+  
+  .topBar .social a {
+    box-shadow: 0 0 2px black;
+    opacity: 0.6;
+    margin-left: 20px;
+    border-radius: 100px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    transition: opacity linear 0.1s; 
+  }
+  
+  .topBar .social a:hover {
+    opacity: 1;
+  }
+  
+  .topBar .social .facebook {
+    background-image: url("icons/facebook_flat.png");
+  }
+  
+  .topBar .social .github {
+    background-image: url("icons/github_flat.png");
+  }
+  
+  .topBar .social .twitter {
+    background-image: url("icons/twitter_flat.png");
+  }
+  
+  .footer {
+    font-size:85%;
+    background-color: #4d4d4d;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 0 2px black;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer img {
+    margin-right: 5px;
+    width: 10px;
+  }
+  
+  .footer * {
+    color: white;
+  }
+  
+  .footer .location {
+    margin-right: 50px;
+  }
+  
+  .footer .email {
+    text-decoration: none;
+  }
+  
+  .footer .email a {
+    margin-left: 50px;
+    text-decoration: none;
+    transition: color linear 0.1s;
+  }
+  
+  .footer .email a:hover{
+    color: #a6d514;
+  }
+  
+  .footer .copyright {
+    margin-left: 50px;
+  }
+  

@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url(style_mobile.css) (max-width: 488px), (max-height: 340px);
+@import url(style_desktop.css) (min-width: 488px) and (min-height: 340px);
+
+html {
+  font-family: Open Sans;
+}
