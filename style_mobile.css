@@ -105,25 +105,9 @@ nav {
 
 .topBar .navigationList li .activated {
     opacity: 1;
+    box-shadow: 0 0 2px black;
+    background-color: #727272;
     color: #a6d514;
-}
-
-.topBar .navigationList li .activated::before{
-    content: ">";
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 6px;
-    font-size: 90%;
-    border-radius: 10px;
-}
-
-.topBar .navigationList li .activated::after{
-    content: "<";
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 6px;
-    font-size: 90%;
-    border-radius: 10px;
 }
 
 .topBar .social {
