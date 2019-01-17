@@ -86,7 +86,7 @@ nav {
     width: 100%;
     opacity: 0.5;
     border-radius: 2px;
-    font-size: 110%;
+    font-size: 100%;
     line-height: 320%;
     color: white;
     outline: none;
@@ -104,26 +104,9 @@ nav {
 }
 
 .topBar .navigationList li .activated {
-    opacity: 1;
-    color: #a6d514;
-}
-
-.topBar .navigationList li .activated::before{
-    content: ">";
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 6px;
-    font-size: 90%;
-    border-radius: 10px;
-}
-
-.topBar .navigationList li .activated::after{
-    content: "<";
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 6px;
-    font-size: 90%;
-    border-radius: 10px;
+    opacity: 0.9;
+    box-shadow: 0 0 2px black;
+    background-color: #727272;
 }
 
 .topBar .social {
