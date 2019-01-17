@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: auto;
-    text-align: center;
   }
   
   html {
@@ -13,13 +11,12 @@
   }
   
   .topBar {
-    background-color: #4d4d4d;
-    padding: 6px 6px 6px 6px;
-    box-shadow: 0px 0px 3px black;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    background-color: #4d4d4d;
+    padding: 8px 6px 8px 6px;
+    box-shadow: 0px 0px 3px black;
   }
   
   .topBar *{
@@ -35,9 +32,10 @@
     width: 100%;
     vertical-align: middle;
   }
-  
+
   nav .navigationList {
     padding: 0;
+    margin: 0;
   }
   
   nav .navigationList li {
@@ -65,8 +63,10 @@
     z-index: 1;
   }
   
-  .topBar .social {
+  .topBar .social{
     padding: 0;
+    margin: 0;
+    text-align: center;
   }
 
   .topBar .social a {
