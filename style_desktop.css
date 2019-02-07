@@ -83,9 +83,16 @@
     transition: opacity linear 0.1s; 
   }
 
-  .topBar .social .middleIcon {
-    margin-left: 20px;
-    margin-right: 20px;
+  .topBar .social li {
+    margin-left: 23px;
+  }
+
+  .topBar .social .firstIcon {
+    margin: 0;
+  }
+
+  .topBar .social .finalIcon {
+    margin-left: 23px;
   }
   
   .topBar .social a:hover {
@@ -102,6 +109,10 @@
   
   .topBar .social .twitter {
     background-image: url("icons/twitter_flat.png");
+  }
+
+  .topBar .social .mailIcon {
+    background-image: url("icons/mail_flat.png");
   }
   
   .footer {
