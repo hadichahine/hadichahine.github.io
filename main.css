@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:700');
 @import url(style_mobile.css) (max-width: 691px), (max-height: 340px);
 @import url(style_desktop.css) (min-width: 691px) and (min-height: 340px);
 
 html {
-  font-family: Open Sans;
+  font-family: Gothic A1;
 }
