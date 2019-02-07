@@ -40,7 +40,10 @@
   
   nav .navigationList li {
     display: inline-flex;
-    margin-right: 3px;
+  }
+
+  nav .navigationList .centerItem {
+    margin: 0 3px 0 3px;
   }
   
   nav .navigationList li a {
