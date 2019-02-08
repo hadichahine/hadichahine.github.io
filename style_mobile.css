@@ -109,6 +109,16 @@ nav {
     background-color: #727272;
 }
 
+.topBar .navigationList li .activated::before {
+    content: "~";
+    margin-right: 5px;
+}
+
+.topBar .navigationList li .activated::after {
+    content: "~";
+    margin-left: 5px;
+}
+
 .topBar .social {
     box-shadow: 0 0 1px inset black;
     background-color: #2c2c2c;
