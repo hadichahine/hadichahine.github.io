@@ -122,6 +122,15 @@ nav {
 
 .topBar .social li {
     display: inline-block;
+    margin-left: 23px;
+}
+
+.topBar .social .firstIcon {
+    margin: 0;
+}
+
+.topBar .social .finalIcon {
+    margin-left: 23px;
 }
 
 .topBar .social a {
@@ -155,6 +164,10 @@ nav {
   
 .topBar .social .twitter {
     background-image: url("icons/twitter_flat.png");
+}
+
+.topBar .social .mailIcon {
+    background-image: url("icons/mail_flat.png");
 }
 
 .footer {
