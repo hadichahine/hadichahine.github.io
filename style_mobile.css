@@ -153,22 +153,6 @@ nav {
 .topBar .social a:hover {
     opacity: 1;
 }
-  
-.topBar .social .facebook {
-    background-image: url("icons/facebook_flat.png");
-}
-  
-.topBar .social .github {
-    background-image: url("icons/github_flat.png");
-}
-  
-.topBar .social .twitter {
-    background-image: url("icons/twitter_flat.png");
-}
-
-.topBar .social .mailIcon {
-    background-image: url("icons/mail_flat.png");
-}
 
 .footer {
     display: none;
