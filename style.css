@@ -1,169 +1,285 @@
 @font-face {
-    font-family: Ping LCG;
-    src: url('fonts/PingLCG-Thin.ttf');
-    font-weight: 100;
+  font-family: Ping LCG;
+  src: url(assets/fonts/PingLCG-Thin.ttf);
+  font-weight: 100;
 }
 
 @font-face {
-    font-family: Ping LCG;
-    src: url('fonts/PingLCG-Regular.ttf');
-    font-weight: normal;
+  font-family: Ping LCG;
+  src: url(assets/fonts/PingLCG-ExtraLightItalic.ttf);
+  font-weight: 200;
 }
 
 @font-face {
-    font-family: Ping LCG;
-    src: url('fonts/PingLCG-Bold.otf');
-    font-weight: bold;
+  font-family: Ping LCG;
+  src: url(assets/fonts/PingLCG-Regular.ttf);
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: Ping LCG;
-    src: url('fonts/PingLCG-Black.ttf');
-    font-weight: 800;
+  font-family: Ping LCG;
+  src: url(assets/fonts/PingLCG-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Ping LCG;
+  src: url(assets/fonts/PingLCG-Black.ttf);
+  font-weight: 800;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 45px 45px 40px 45px;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    --dark-red: #d40000;
-    --teal: #008080;
+  margin: 0;
+  padding: 45px 45px 40px 45px;
+  width: 100vw;
+  height: 100vh;
+  --dark-red: #d40000;
+  --teal: #008080;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
-    display: inline;
-    list-style: none;
+  display: inline;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+  line-height: 100%;
+}
+
+span {
+  line-height: 100%;
 }
 
 .landing-page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+  display: grid;
+  grid-template-columns: auto 47px 1fr 25px auto;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  height: 100%;
 }
 
-.landing-page .top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.landing-page .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 6;
 }
 
-.top .logo {
-    font-size: 2em;
-    font-family: Ping LCG;
-    font-weight: bold;
-    font-size: 42.4px;
+.logo {
+  font-size: 2em;
+  font-family: Ping LCG;
+  font-weight: bold;
+  font-size: 42.4px;
 }
 
-.top .nav ul li {
-    font-family: Ping LCG;
-    font-weight: bold;
-    font-size: 15px;
+.nav ul li {
+  font-family: Ping LCG;
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.top .nav ul li:not(:first-child){
-    margin-left: 40px;
+.nav ul li:not(:first-child) {
+  margin-left: 40px;
 }
 
-.main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
+.links {
+  width: 2ex;
+  display: flex;
+  align-items: center;
 }
 
-.main .links {
-    width: 2ex;
-    height: 400px;
-    display: flex;
-    align-items: center;
+.links > * {
+  transform: translateX(calc(-50% + 1ex)) rotate(-90deg);
 }
 
-.main .links > * {
-    transform: translateX(calc(-50% + 1ex)) rotate(-90deg);
+.links > * > *:not(:first-child) {
+  margin-left: 44px;
 }
 
-.main .links > * > *:not(:first-child) {
-    margin-left: 44px;
-}
-
-.main .links > * a {
-    font-family: Ping LCG;
-}
-
-.center {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex: 1;
-    --fill-color: #d40000;
-}
-
-.center *{
-    transition: fill 0.2s, color 0.2s;
-}
-
-.center *:hover {
-    --fill-color: var(--teal);
+.links > * a {
+  font-family: Ping LCG;
 }
 
 .art {
-    width: 42%;
+  width: 42%;
 }
 
 .description > * {
-    display: block;
+  display: block;
 }
 
 .description .fullname {
-    font-size: 94.7px;
-    font-family: Ping LCG;
-    line-height: 100%;
-    font-weight: 800;
-    color: var(--fill-color);
+  font-size: 94.7px;
+  font-family: Ping LCG;
+  line-height: 100%;
+  font-weight: 800;
+  color: var(--fill-color);
 }
 
 .st1 {
-    fill: var(--fill-color);
+  fill: var(--fill-color);
 }
 
-.description .profession{
-    font-size: 36px;
-    font-family: Ping LCG;
-    font-weight: 100;
-    font-weight: 200;
-    line-height: 100%;
-    color: grey;
+.description .profession {
+  font-size: 36px;
+  font-family: Ping LCG;
+  font-weight: 100;
+  font-weight: 200;
+  line-height: 100%;
+  color: grey;
 }
 
-.main .email {
-    width: 2ex;
-    height: 400px;
-    display: flex;
-    align-items: center;
+.email {
+  width: 2ex;
+  display: flex;
+  align-items: center;
+  grid-column-start: 5;
 }
 
-.main .email span{
-    font-family: Ping LCG;
-    transform: translateX(calc(-50% + 1ex)) rotate(90deg);
+.email span {
+  font-family: Ping LCG;
+  transform: translateX(calc(-50% + 1ex)) rotate(90deg);
 }
 
 .scroll {
-    text-align: center;
-    font-family: Ping LCG;
-    font-weight: 100;
-    font-size: 36px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  font-family: Ping LCG;
+  font-weight: 100;
+  font-size: 36px;
+}
+
+.center {
+  grid-column-start: 3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.center-landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  --fill-color: #d40000;
+}
+
+.center-landing * {
+  transition: fill 0.2s, color 0.2s;
+}
+
+.center-landing *:hover {
+  --fill-color: var(--teal);
+}
+
+.st1 {
+  fill: var(--fill-color);
+}
+
+.art {
+  width: 42%;
+}
+
+.description > * {
+  display: block;
+}
+
+.description .fullname {
+  font-size: 94.7px;
+  font-family: Ping LCG;
+  line-height: 100%;
+  font-weight: 800;
+  color: var(--fill-color);
+}
+
+.description .profession {
+  font-size: 36px;
+  font-family: Ping LCG;
+  font-weight: 100;
+  font-weight: 200;
+  line-height: 100%;
+  color: grey;
+}
+
+.center-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.center-about .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.center-about .title {
+  font-size: 32px;
+  color: #33cc00ff;
+  font-family: Ping LCG;
+  font-weight: 800;
+  margin-bottom: 23px;
+}
+
+.center-about .subtitle {
+  font-size: 23px;
+  font-family: Ping LCG;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+.center-about .description {
+  font-size: 32px;
+  font-family: Ping LCG;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+.bottom {
+  grid-column-start: 3;
+}
+
+.cv-button a {
+  display: inline-block;
+  padding: 10px 16px 12px 17px;
+  border: 1px #33cc00ff solid;
+  color: #33cc00ff;
+  font-family: Ping LCG;
+  font-weight: bold;
+}
+
+.center .screen-number {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center .screen-number * {
+  width: 16px;
+  height: 16px;
+  background: #33cc00ff;
+  opacity: 0.3;
+  border-radius: 100%;
+}
+
+.center .screen-number *:not(:first-child) {
+  margin-top: 10px;
+}
+
+.center .screen-number .activated {
+  opacity: 1;
 }
