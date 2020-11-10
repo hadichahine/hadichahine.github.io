@@ -389,7 +389,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
       .bottom {
         grid-column-start: 3;
       }
-      `}})},function(e,t,n){const{LitElement:r,html:i,css:o}=n(0),{createSinglePaneSwitcher:a}=n(1),s=n(9).default;customElements.define("landing-screen",class extends r{static get properties(){return{currentPageIndex:{type:Number}}}constructor(){super(),this.pageTotal=5,this.currentPageIndex=0}pagesDOM(){return Array.from(this.shadowRoot.querySelectorAll(".page"))}firstUpdated(){const e=this;this.pageSwitcher=a.call(this,this.pagesDOM().map((t,n)=>({show(){e.currentPageIndex=n;var t={offset:document.documentElement.scrollTop||document.body.scrollTop};s({targets:t,offset:n*window.innerHeight+1,duration:250,easing:"easeInOutCirc",update:function(){window.scrollTo(0,t.offset)}})},hide(){}})))}arrayOfN(e){return Array.from(Array(e).keys())}mainKeypress(e){switch(e.key){case"ArrowDown":this.pageSwitcher.next();break;case"ArrowUp":this.pageSwitcher.backwards()}}render(){return i`
+      `}})},function(e,t,n){const{LitElement:r,html:i,css:o}=n(0),{createSinglePaneSwitcher:a}=n(1),s=n(9).default;customElements.define("landing-screen",class extends r{static get properties(){return{currentPageIndex:{type:Number}}}constructor(){super(),this.pageTotal=3,this.currentPageIndex=0}pagesDOM(){return Array.from(this.shadowRoot.querySelectorAll(".page"))}firstUpdated(){const e=this;this.pageSwitcher=a.call(this,this.pagesDOM().map((t,n)=>({show(){e.currentPageIndex=n;var t={offset:document.documentElement.scrollTop||document.body.scrollTop};s({targets:t,offset:n*window.innerHeight+1,duration:250,easing:"easeInOutCirc",update:function(){window.scrollTo(0,t.offset)}})},hide(){}})))}arrayOfN(e){return Array.from(Array(e).keys())}mainKeypress(e){switch(e.key){case"ArrowDown":case"PageDown":this.pageSwitcher.next();break;case"ArrowUp":case"PageUp":this.pageSwitcher.backwards()}}render(){return i`
       <div class='main' tabindex="0" @keydown=${this.mainKeypress}>
       <div class='screen-number'>
         ${this.arrayOfN(this.pageTotal).map(e=>i`<div class='marker ${e===this.currentPageIndex?"activated":""}'></div>`)}
@@ -431,12 +431,6 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
             <span class='cv-button'><a href='cv.pdf'>See All Projects</a></span>
           </div>
         </div>
-    </div>
-    <div class='landing-project-preview-2 page'>
-        
-    </div>
-    <div class='landing-project-preview-3 page'>
-
     </div>
     <layout-central class='page'>
       <div class='grabber' slot='center'>
