@@ -54,6 +54,7 @@ span {
 
 * {
   box-sizing: border-box;
+  --fg-color: #008080;
 }
 
 body {

@@ -479,7 +479,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
         width: 100%;
         height: 100%;
         flex: 1;
-        --fill-color: #008080;
+        --fill-color: var(--fg-color);
     }
 
     div[class^="landing-project-preview"] {
@@ -532,8 +532,8 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     .cv-button a{
       display: inline-block;
       padding: 10px 16px 12px 17px;
-      border: 1px #33cc00ff solid;
-      color: #33cc00ff;
+      border: 1px var(--fg-color) solid;
+      color: var(--fg-color);
       font-family: Ping LCG;
       font-weight: bold;
   }
@@ -554,7 +554,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     font-size: 42px;
     font-family: Ping LCG;
     font-weight: 800;
-    color: #33cc00ff;
+    color: var(--fg-color);
     line-height: 100%;
   }
 
@@ -580,7 +580,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
   .landing-project-preview-1 .title-section .title{
     font-family: Ping LCG;
     font-weight: 800;
-    color: #33cc00ff;
+    color: var(--fg-color);
     font-size: 30px;
   }
 
@@ -636,7 +636,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     
     .about-section .title {
         font-size: 32px;
-        color: #33cc00ff;
+        color: var(--fg-color);
         font-family: Ping LCG;
         font-weight: 800;
         margin-bottom: 23px;
@@ -685,7 +685,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     .screen-number * {
         width: 16px;
         height: 16px;
-        background: #33cc00ff;
+        background: var(--fg-color);
         opacity: 0.3;
         border-radius: 100%;
     }
@@ -701,8 +701,8 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     .cv-button a{
         display: inline-block;
         padding: 10px 16px 12px 17px;
-        border: 1px #33cc00ff solid;
-        color: #33cc00ff;
+        border: 1px var(--fg-color) solid;
+        color: var(--fg-color);
         font-family: Ping LCG;
         font-weight: bold;
     }
