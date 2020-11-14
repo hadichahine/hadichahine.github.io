@@ -389,7 +389,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
       .bottom {
         grid-column-start: 3;
       }
-      `}})},function(e,t,n){const{LitElement:r,html:i,css:o}=n(0),{createSinglePaneSwitcher:a}=n(1),s=n(9).default;customElements.define("landing-screen",class extends r{static get properties(){return{currentPageIndex:{type:Number}}}constructor(){super(),this.pageTotal=3,this.currentPageIndex=0}pagesDOM(){return Array.from(this.shadowRoot.querySelectorAll(".page"))}firstUpdated(){const e=this;this.pageSwitcher=a.call(this,this.pagesDOM().map((t,n)=>({show(){e.currentPageIndex=n;var t={offset:document.documentElement.scrollTop||document.body.scrollTop};s({targets:t,offset:n*(window.innerHeight+1),duration:250,easing:"easeInOutCirc",update:function(){window.scrollTo(0,t.offset)}})},hide(){}})))}arrayOfN(e){return Array.from(Array(e).keys())}mainKeypress(e){switch(e.key){case"ArrowDown":case"PageDown":this.pageSwitcher.next();break;case"ArrowUp":case"PageUp":this.pageSwitcher.backwards()}}render(){return i`
+      `}})},function(e,t,n){const{LitElement:r,html:i,css:o}=n(0),{createSinglePaneSwitcher:a}=n(1),s=n(9).default;customElements.define("landing-screen",class extends r{static get properties(){return{currentPageIndex:{type:Number}}}constructor(){super(),this.pageTotal=5,this.currentPageIndex=0}pagesDOM(){return Array.from(this.shadowRoot.querySelectorAll(".page"))}firstUpdated(){const e=this;this.pageSwitcher=a.call(this,this.pagesDOM().map((t,n)=>({show(){e.currentPageIndex=n;var t={offset:document.documentElement.scrollTop||document.body.scrollTop};s({targets:t,offset:n*window.innerHeight+1,duration:250,easing:"easeInOutCirc",update:function(){window.scrollTo(0,t.offset)}})},hide(){}})))}arrayOfN(e){return Array.from(Array(e).keys())}mainKeypress(e){switch(e.key){case"ArrowDown":case"PageDown":this.pageSwitcher.next();break;case"ArrowUp":case"PageUp":this.pageSwitcher.backwards()}}render(){return i`
       <div class='main' tabindex="0" @keydown=${this.mainKeypress}>
       <div class='screen-number'>
         ${this.arrayOfN(this.pageTotal).map(e=>i`<div class='marker ${e===this.currentPageIndex?"activated":""}'></div>`)}
@@ -416,15 +416,41 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
       </div>
      <span slot='bottom' class='scroll'>Scroll!</span>
     </layout-central>
-    <div class='landing-project-preview-1 page'>
+    <div class='preview-header landing-project-preview page'>
         <div class='title-section'>
           <span class='title'>Written with dedication</span>
           <span class='subtitle'>A selection of my latest work.</span>
         </div>
         <div class='preview-main'>
-          <div class='image'>
-            
+          <img src='./assets/images/d1.jpg'/>
+          <div class='actions'>
+            <div class='info'>
+              <span class='title'>Custom</br>Portfolio</br>Website</span>
+              <span class='subtitle'>Frontend</span>
+            </div>
+            <div class='button'>
+              <span class='cv-button'><a href='cv.pdf'>See All Projects</a></span>
+            </div>
           </div>
+        </div>
+    </div>
+    <div class='landing-project-preview page'>
+        <div class='preview-main'>
+          <img src='./assets/images/d2.jpg'/>
+          <div class='actions'>
+            <div class='info'>
+              <span class='title'>Custom</br>Portfolio</br>Website</span>
+              <span class='subtitle'>Frontend</span>
+            </div>
+            <div class='button'>
+              <span class='cv-button'><a href='cv.pdf'>See All Projects</a></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class='landing-project-preview page'>
+        <div class='preview-main'>
+          <img src='./assets/images/d3.jpg'/>
           <div class='actions'>
             <div class='info'>
               <span class='title'>Custom</br>Portfolio</br>Website</span>
@@ -486,7 +512,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
         --fill-color: var(--fg-color);
     }
 
-    div[class^="landing-project-preview"] {
+    .landing-project-preview {
       box-sizing: border-box;
       height:100vh;
     }
@@ -569,7 +595,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     line-height: 100%;
   }
 
-  .landing-project-preview-1 {
+  .landing-project-preview {
     padding: 55px 0 78px 120px;
     background-color: #333333ff;
     display: flex;
@@ -577,30 +603,50 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     justify-content: space-between;
   }
 
-  .landing-project-preview-1 .title-section span{
+  .landing-project-preview .title-section span{
     display: block;
   }
 
-  .landing-project-preview-1 .title-section .title{
+  .landing-project-preview .title-section .title{
     font-family: Ping LCG;
     font-weight: 800;
     color: var(--fg-color);
     font-size: 30px;
   }
 
-  .landing-project-preview-1 .title-section .subtitle{
+  .landing-project-preview .title-section .subtitle{
     font-family: Ping LCG;
     font-weight: 200;
     color: white;
     font-size: 22px;
   }
 
-  .landing-project-preview-1 .preview-main{
-    background-color: white;
+  .landing-project-preview.preview-header .preview-main{
     height: 350px;
   }
 
-  .landing-project-preview-1 .preview-main .actions{
+  .landing-project-preview .preview-main{
+    background-color: white;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .landing-project-preview .preview-main > *{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .landing-project-preview .preview-main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .landing-project-preview .preview-main .actions{
     height: 100%;
     display: inline-flex;
     flex-direction: column;
@@ -608,21 +654,21 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     align-items: center;
   }
 
-  .landing-project-preview-1 .preview-main .actions .info{
+  .landing-project-preview .preview-main .actions .info{
     flex: 380;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .landing-project-preview-1 .preview-main .actions .button{
+  .landing-project-preview .preview-main .actions .button{
     flex: 110;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .landing-project-preview-1 .preview-main .actions .info .title{
+  .landing-project-preview .preview-main .actions .info .title{
     color: var(--fg-color);
     font-family: Ping LCG;
     font-weight: 800;
@@ -630,7 +676,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
   }
 
 
-  .landing-project-preview-1 .preview-main .actions .info .subtitle{
+  .landing-project-preview .preview-main .actions .info .subtitle{
     color: #808080;
     font-family: Ping LCG;
     font-weight: 200;
