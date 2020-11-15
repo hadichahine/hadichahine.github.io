@@ -422,11 +422,11 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
           <span class='subtitle'>A selection of my latest work.</span>
         </div>
         <div class='preview-main'>
-          <img src='./assets/images/d1.jpg'/>
+          <img src='./assets/images/d1.png'/>
           <div class='actions'>
             <div class='info'>
-              <span class='title'>Custom</br>Portfolio</br>Website</span>
-              <span class='subtitle'>Frontend</span>
+              <span class='title'>cest</br>C Unit</br>Testing</span>
+              <span class='subtitle'>Tools</span>
             </div>
             <div class='button'>
               <span class='cv-button'><a href='cv.pdf'>See All Projects</a></span>
@@ -489,7 +489,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
   .screen-number * {
       width: 16px;
       height: 16px;
-      background: #008080;
+      background: var(--fg-color);
       opacity: 0.3;
       border-radius: 100%;
   }
