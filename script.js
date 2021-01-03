@@ -397,6 +397,10 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
       <layout-central class='page'>
         <div slot='center' class='center-landing' >
         <div class='art'>
+          <div class='art-bg'>
+            <img src='http://localhost:8080/Designs/HomePage/50432F47DB798E5C.png' />
+          </div>
+          <div>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 545 322" style="enable-background:new 0 0 545 322;" xml:space="preserve">
           <style type="text/css">
@@ -408,13 +412,18 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
             <path class="st1" d="M377.9,188.2l98.4-46.9l-98.4-46.9V28.7l166.9,92.5v40.2l-166.9,92.9V188.2z"/>
           </g>
           </svg>
+          </div>
         </div>
         <div class='description'>
           <span class='fullname'>Hadi</br>Chahine</span>
           <span class='profession'>Software Developer</span>
         </div>
       </div>
-     <span slot='bottom' class='scroll'>Scroll!</span>
+     <span slot='bottom' class='down-arrow'>
+      <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000">
+      <g><path d="M40.2,243.7l467.4,467.4l467.4-467.4l15.1,30.2L507.5,756.3L10,273.8L40.2,243.7z"/></g>
+      </svg>
+     <span>
     </layout-central>
     <div class='preview-header landing-project-preview page'>
         <div class='title-section'>
@@ -436,10 +445,10 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     </div>
     <div class='landing-project-preview page'>
         <div class='preview-main'>
-          <img src='./assets/images/d2.jpg'/>
+          <img src='./assets/images/d2.png'/>
           <div class='actions'>
             <div class='info'>
-              <span class='title'>Custom</br>Portfolio</br>Website</span>
+              <span class='title'>The</br>Weather</br>Dashboard</span>
               <span class='subtitle'>Frontend</span>
             </div>
             <div class='button'>
@@ -513,6 +522,17 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
         --fill-color: var(--fg-color);
     }
 
+    .down-arrow {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .down-arrow > *{
+      width: 50px;
+      height: 50px;
+    }
+
     .landing-project-preview {
       box-sizing: border-box;
       height:100vh;
@@ -528,6 +548,19 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
     
     .art {
         width: 42%;
+        position: relative; 
+    }
+
+    .art > .art-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -10;
+      transform: translateX(-12px);
+    }
+
+    .art > .art-bg > img {
+      max-width: 100%
     }
     
     .description > * {
@@ -550,7 +583,8 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
         line-height: 100%;
         color: grey;
     }
-    .scroll, .take-up {
+    
+    .take-up {
         width: 100%;
         display: inline-block;
         text-align: center;
@@ -598,7 +632,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
 
   .landing-project-preview {
     padding: 55px 0 78px 120px;
-    background-color: #333333ff;
+    background-color: #36204cff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
