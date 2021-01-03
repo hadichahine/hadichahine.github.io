@@ -398,7 +398,7 @@ function(e){var t,n,r,i,o,a,s,l,u,c,d,p,f,h,g,m,v,y,b,x="sizzle"+1*new Date,w=e.
         <div slot='center' class='center-landing' >
         <div class='art'>
           <div class='art-bg'>
-            <img src='http://localhost:8080/Designs/HomePage/50432F47DB798E5C.png' />
+            <img src='./assets/images/landing-code-bg.png' />
           </div>
           <div>
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
