@@ -454,7 +454,7 @@ function(e){var t,n,r,i,o,s,a,u,c,l,d,p,f,h,g,m,v,y,w,x="sizzle"+1*new Date,b=e.
         </div>`)}
     <layout-central class='page'>
       <div class='grabber' slot='center'>
-        <span class='question'>This is most of what I've been working on.</span>
+        <span class='question'>and a lot more to be published.</span>
         <span class='mark'>A career section will be added soon.</span>
         <span class='cv-button'><a href='cv.pdf'>Resume</a></span>
       </div>
