@@ -62,6 +62,7 @@ body {
   --dark-red: #d40000;
   --teal: #008080;
   overflow: hidden;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 ul {
@@ -82,4 +83,8 @@ a {
 
 span {
   line-height: 100%;
+}
+
+#gAqARnX_yWn8ztFaiZxNm {
+  height: 100%;
 }
