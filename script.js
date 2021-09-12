@@ -199,7 +199,7 @@ function(e){var t,n,r,i,o,s,a,u,c,l,d,p,f,h,g,m,v,y,w,x="sizzle"+1*new Date,b=e.
           <span class="logo"><a href="/">HC.</a></span>
           <nav class="nav">
             <ul>
-              <li><a href="/">PORTFOLIO</a></li>
+              <li><a href="/">CAREER</a></li>
               <li><a href="/about">ME</a></li>
             </ul>
           </nav>
@@ -454,11 +454,15 @@ function(e){var t,n,r,i,o,s,a,u,c,l,d,p,f,h,g,m,v,y,w,x="sizzle"+1*new Date,b=e.
         </div>`)}
     <layout-central class='page'>
       <div class='grabber' slot='center'>
-        <span class='question'>Like what you see?</span>
-        <span class='mark'>You haven't seen it all!</span>
-        <span class='cv-button'><a href='cv.pdf'>See All Projects</a></span>
+        <span class='question'>This is most of what I've been working on.</span>
+        <span class='mark'>A career section will be added soon.</span>
+        <span class='cv-button'><a href='cv.pdf'>Resume</a></span>
       </div>
-      <span slot='bottom' class='take-up'>Take me up!</span>
+      <span slot='bottom' class='down-arrow'>
+      <svg version="1.1" x="0px" y="0px" viewBox="0 0 1000 1000">
+      <g transform='rotate(180 500 500)' ><path d="M40.2,243.7l467.4,467.4l467.4-467.4l15.1,30.2L507.5,756.3L10,273.8L40.2,243.7z"/></g>
+      </svg>
+     <span>
     </layout-central>
     </div>`}static get styles(){return o`
         a {
@@ -794,6 +798,7 @@ function(e){var t,n,r,i,o,s,a,u,c,l,d,p,f,h,g,m,v,y,w,x="sizzle"+1*new Date,b=e.
           margin: auto;
           display: flex;
           flex-direction: column;
+          justify-content: center;
           text-align: center;
         }
 
@@ -827,7 +832,7 @@ function(e){var t,n,r,i,o,s,a,u,c,l,d,p,f,h,g,m,v,y,w,x="sizzle"+1*new Date,b=e.
         <div slot="center" class="about-section">
           <div class="container">
             <div class="page content activated">
-              <span class="title">So, who's Hadi Chahine?</span>
+              <span class="title">So what is this all about?</span>
               <span class="subtitle"
                 >TL;DL - A fairly experiened software developer</span
               >
