@@ -62,6 +62,7 @@ body {
   --dark-red: #d40000;
   --teal: #008080;
   overflow: hidden;
+  font-weight: PingPCG;
   height: calc(var(--vh, 1vh) * 100);
 }
 
