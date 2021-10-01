@@ -498,6 +498,8 @@
             .landing-project-preview .text-pane .subtitle {
               font-size: 19.17px;
               margin-top: 10px;
+              font-style: italic;
+              font-weight: 800;
             }
 
             .landing-project-preview .text-pane .description {
