@@ -113,6 +113,34 @@
           </div>
         </switcher-layout>
       </layout-central>`}static get styles(){return o`
+        @media only screen and (max-width: 820px) {
+          .about-section .title {
+            font-size: 25px;
+          }
+
+          .about-section .subtitle {
+            font-size: 21px;
+          }
+
+          .about-section .description {
+            font-size: 20px;
+          }
+        }
+
+        @media only screen and (min-width: 820px) {
+          .about-section .title {
+            font-size: 32px;
+          }
+
+          .about-section .subtitle {
+            font-size: 23px;
+          }
+
+          .about-section .description {
+            font-size: 25px;
+          }
+        }
+
         .about-section {
           display: flex;
           width: 100%;
@@ -128,7 +156,6 @@
         }
 
         .about-section .title {
-          font-size: 32px;
           color: var(--fg-color);
           font-family: Ping LCG;
           font-weight: 800;
@@ -136,26 +163,15 @@
         }
 
         .about-section .subtitle {
-          font-size: 23px;
           font-family: Ping LCG;
           font-weight: 200;
           margin-bottom: 50px;
         }
 
         .about-section .description {
-          font-size: 25px;
           font-family: Ping LCG;
           font-weight: normal;
           line-height: 130%;
-        }
-
-        .cv-button a {
-          display: inline-block;
-          padding: 10px 16px 12px 17px;
-          border: 1px var(--fg-color) solid;
-          color: var(--fg-color);
-          font-family: Ping LCG;
-          font-weight: bold;
         }
       `}})},152:(e,t,n)=>{"use strict";var r=n(476);customElements.define("layout-central",class extends r.LitElement{render(){return r.html` <div class="landing-page">
         <div class="top">
