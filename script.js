@@ -447,7 +447,7 @@
             }
 
             .description .fullname {
-              font-size: 51.1px;
+              font-size: 90px;
               font-family: Ping LCG;
               line-height: 100%;
               font-weight: 800;
@@ -569,18 +569,21 @@
             }
 
             .description .fullname {
-              font-size: 94.7px;
+              font-size: 80px;
               font-family: Ping LCG;
               line-height: 100%;
               font-weight: 800;
+              text-align: center;
               color: var(--fill-color);
             }
 
             .description .profession {
-              font-size: 36px;
+              margin-top: 10px;
+              font-size: 28px;
               font-family: Ping LCG;
               font-weight: 100;
               font-weight: 200;
+              text-align: center;
               line-height: 100%;
               color: grey;
             }
@@ -710,7 +713,7 @@
           }
 
           .mark {
-            font-size: 30px;
+            font-size: 23px;
             font-family: Ping LCG;
             font-weight: 200;
             line-height: 100%;
@@ -727,11 +730,11 @@
         `}render(){return r.html` <switcher-layout>
           <layout-central class="page">
             <div slot="center" class="center-landing">
+              <!--
               <div class="art">
                 <div class="art-bg">
                   <img src="${d()}" />
                 </div>
-
                 <svg
                   version="1.1"
                   id="Layer_1"
@@ -764,9 +767,10 @@
                   </g>
                 </svg>
               </div>
+              -->
               <div class="description">
                 <span class="fullname">Hadi<br />Chahine</span>
-                <span class="profession">Software Developer</span>
+                <span class="profession">Software Engineer</span>
               </div>
             </div>
             <span slot="bottom" class="down-arrow">
@@ -804,7 +808,7 @@
               </div>`))}
           <layout-central class="page">
             <div class="grabber" slot="center">
-              <span class="question">and a lot more to be published.</span>
+              <span class="question">That's all folks.</span>
               <span class="mark">A career section will be added soon.</span>
               <span class="cv-button"
                 ><a
